@@ -3,32 +3,14 @@
   margin: 0px;
 }
 body{
-    background-color: rgb(233, 233, 233);  
+    background-color: rgb(250, 250, 250);  
     font-family: 'Courier New', Courier, monospace;
 }
  #cabeçalho{
-    border: solid red 1px;
     height: 300px;
-    background: 
-        linear-gradient(
-          142deg,
-          hsl(354, 100%, 45.1%) 0%,
-          hsl(354.42, 98.73%, 45.39%) 8.1%,
-          hsl(355.64, 95.26%, 46.19%) 15.5%,
-          hsl(357.62, 90.11%, 47.44%) 22.5%,
-          hsl(0.34, 84.76%, 48.82%) 29%,
-          hsl(3.6, 86.21%, 48.44%) 35.3%,
-          hsl(7.13, 87.83%, 48.02%) 41.2%,
-          hsl(10.8, 89.57%, 47.58%) 47.1%,
-          hsl(14.45, 91.39%, 47.13%) 52.9%,
-          hsl(17.96, 93.2%, 46.69%) 58.8%,
-          hsl(21.22, 94.95%, 46.27%) 64.7%,
-          hsl(24.11, 96.55%, 45.89%) 71%,
-          hsl(26.53, 97.94%, 45.57%) 77.5%,
-          hsl(28.39, 99.03%, 45.32%) 84.5%,
-          hsl(29.58, 99.75%, 45.16%) 91.9%,
-          hsl(30, 100%, 45.1%) 100%
-        )
+    background-image: url(image/baratie.jpg);
+    background-size: cover;
+    
  }
 
  .titulo-1{
@@ -57,11 +39,36 @@ body{
  border-radius: 10px;
  border: 1px;
  font-size: 20px;
- margin-top: 60px;
- margin-left: 25%;
+ margin-top: 3%;
+ margin-left: 26%;
  margin-right: 30%;
  background-image: url(image/search\ icon.png);
  background-repeat: no-repeat;
  background-size: 34px;
  background-position: right;
+}
+
+#menu-principal{
+   height: 50px;
+   background-color: rgb(216, 215, 215);
+}
+
+#menu-principal ul{
+   border: solid red 1px;
+   margin-top: 10px;
+   margin-left: 25%;
+   width: 50%;
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   text-decoration: none;
+   justify-content: space-between;
+}
+
+#menu-principal li a{
+   border: solid rgb(30, 255, 0) 1px;
+   list-style: none;
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
 }
