@@ -1,6 +1,7 @@
 *{
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 body{
     background-color: rgb(250, 250, 250);  
@@ -102,7 +103,6 @@ display: none;
 
 #pratos{
    height: 740px;
-   border: solid red 1px;
    background-color: rgb(255, 255, 255);
 }
 
@@ -123,6 +123,8 @@ display: none;
    margin-top: 20px;
    overflow: hidden;
    position: relative;
+   -webkit-box-shadow: 11px 9px 23px -3px rgba(0,0,0,0.77); 
+   box-shadow: 11px 9px 23px -3px rgba(0,0,0,0.77);
 }
 
 img{
@@ -173,58 +175,17 @@ img{
 
   .comidas:hover .descrição h2{
    opacity: 1;
-  }
+   transition-duration: 0.8s;
+}
   .comidas:hover .descrição p{
-   opacity: 1;
-  }
+   opacity: 1; 
+   transition-duration: 0.8s;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*animações*/
-
-@-webkit-keyframes scale-up-ver-bottom {
-   0% {
-     -webkit-transform: scaleY(0.4);
-             transform: scaleY(0.4);
-     -webkit-transform-origin: 0% 100%;
-             transform-origin: 0% 100%;
-   }
-   100% {
-     -webkit-transform: scaleY(1);
-             transform: scaleY(1);
-     -webkit-transform-origin: 0% 100%;
-             transform-origin: 0% 100%;
-   }
- }
- @keyframes scale-up-ver-bottom {
-   0% {
-     -webkit-transform: scaleY(0.4);
-             transform: scaleY(0.4);
-     -webkit-transform-origin: 0% 100%;
-             transform-origin: 0% 100%;
-   }
-   100% {
-     -webkit-transform: scaleY(1);
-             transform: scaleY(1);
-     -webkit-transform-origin: 0% 100%;
-             transform-origin: 0% 100%;
-   }
- }
+#bebidas{
+   height: 450px;
+   margin-top: 100px;
+   background-color: rgb(252, 252, 252);
+}
  
